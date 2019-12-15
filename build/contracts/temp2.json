@@ -1,0 +1,486 @@
+{
+  "contractName": "temp2",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nice",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "bad",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"bad\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"nice\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/temp.sol\":\"temp2\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/temp.sol\":{\"keccak256\":\"0x3cf3d1d96652f9b518342bc988e3aba39c5fd448859b0355ca0e17bb18769bf7\",\"urls\":[\"bzz-raw://c17b73cf017af5af170d36055d8bc31978835402dae4be13553b55b7268dac33\",\"dweb:/ipfs/QmXejwCKxRtq17puWvxzLcsaRwugUVYe1PJKJgHfAbWJnL\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506101f0806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c806392cc410a1461003b5780639c3674fc146100be575b600080fd5b610043610141565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c661017e565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101065780820151818401526020810190506100eb565b50505050905090810190601f1680156101335780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601181526020017f4e69636520746f206d65657420796f7521000000000000000000000000000000815250905090565b60606040518060400160405280600881526020017f62616420796f752100000000000000000000000000000000000000000000000081525090509056fea265627a7a7231582061209fec722f1e8a1238cace36bba96cf5d1798b2b6e2982a73a95ede1cd02bb64736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c806392cc410a1461003b5780639c3674fc146100be575b600080fd5b610043610141565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c661017e565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101065780820151818401526020810190506100eb565b50505050905090810190601f1680156101335780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601181526020017f4e69636520746f206d65657420796f7521000000000000000000000000000000815250905090565b60606040518060400160405280600881526020017f62616420796f752100000000000000000000000000000000000000000000000081525090509056fea265627a7a7231582061209fec722f1e8a1238cace36bba96cf5d1798b2b6e2982a73a95ede1cd02bb64736f6c634300050c0032",
+  "sourceMap": "34:257:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:257:5;;;;;;;",
+  "deployedSourceMap": "34:257:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:257:5;;;;;;;;;;;;;;;;;;;;;;;;68:105;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;68:105:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;181:95;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;181:95:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;68:105;104:13;139:26;;;;;;;;;;;;;;;;;;;68:105;:::o;181:95::-;216:13;251:17;;;;;;;;;;;;;;;;;;;181:95;:::o",
+  "source": "pragma solidity >=0.4.0 <=0.6.0;\r\ncontract temp2{\r\n    \r\n   \r\n\r\n    function nice() pure public returns(string memory){\r\n        \r\n        return \"Nice to meet you!\";\r\n    }\r\n\r\n    function bad() pure public returns(string memory){\r\n        \r\n        return \"bad you!\";\r\n    }\r\n    \r\n    \r\n}",
+  "sourcePath": "C:/Users/k/desktop/dirbtuves/TRUE-fella/contracts/temp.sol",
+  "ast": {
+    "absolutePath": "/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/temp.sol",
+    "exportedSymbols": {
+      "temp2": [
+        337
+      ]
+    },
+    "id": 338,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 320,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0",
+          "<=",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 337,
+        "linearizedBaseContracts": [
+          337
+        ],
+        "name": "temp2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 327,
+              "nodeType": "Block",
+              "src": "118:55:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4e69636520746f206d65657420796f7521",
+                    "id": 325,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "146:19:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7ae0e484cdc1e1687a0d12348c3aba489a02f22f70c368de5133ca29149fa3ac",
+                      "typeString": "literal_string \"Nice to meet you!\""
+                    },
+                    "value": "Nice to meet you!"
+                  },
+                  "functionReturnParameters": 324,
+                  "id": 326,
+                  "nodeType": "Return",
+                  "src": "139:26:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 328,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "81:2:5"
+            },
+            "returnParameters": {
+              "id": 324,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 323,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 328,
+                  "src": "104:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 322,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "103:15:5"
+            },
+            "scope": 337,
+            "src": "68:105:5",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 335,
+              "nodeType": "Block",
+              "src": "230:46:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "62616420796f7521",
+                    "id": 333,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "258:10:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_144da5e62e6ebba0bf1d62e4c4fa27aa0aa9a49490f101ebe33cb20d0cfec946",
+                      "typeString": "literal_string \"bad you!\""
+                    },
+                    "value": "bad you!"
+                  },
+                  "functionReturnParameters": 332,
+                  "id": 334,
+                  "nodeType": "Return",
+                  "src": "251:17:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 336,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bad",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:2:5"
+            },
+            "returnParameters": {
+              "id": 332,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 331,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 336,
+                  "src": "216:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 330,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "216:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "215:15:5"
+            },
+            "scope": 337,
+            "src": "181:95:5",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 338,
+        "src": "34:257:5"
+      }
+    ],
+    "src": "0:291:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/temp.sol",
+    "exportedSymbols": {
+      "temp2": [
+        337
+      ]
+    },
+    "id": 338,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 320,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0",
+          "<=",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 337,
+        "linearizedBaseContracts": [
+          337
+        ],
+        "name": "temp2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 327,
+              "nodeType": "Block",
+              "src": "118:55:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4e69636520746f206d65657420796f7521",
+                    "id": 325,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "146:19:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7ae0e484cdc1e1687a0d12348c3aba489a02f22f70c368de5133ca29149fa3ac",
+                      "typeString": "literal_string \"Nice to meet you!\""
+                    },
+                    "value": "Nice to meet you!"
+                  },
+                  "functionReturnParameters": 324,
+                  "id": 326,
+                  "nodeType": "Return",
+                  "src": "139:26:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 328,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 321,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "81:2:5"
+            },
+            "returnParameters": {
+              "id": 324,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 323,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 328,
+                  "src": "104:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 322,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "104:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "103:15:5"
+            },
+            "scope": 337,
+            "src": "68:105:5",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 335,
+              "nodeType": "Block",
+              "src": "230:46:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "62616420796f7521",
+                    "id": 333,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "258:10:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_144da5e62e6ebba0bf1d62e4c4fa27aa0aa9a49490f101ebe33cb20d0cfec946",
+                      "typeString": "literal_string \"bad you!\""
+                    },
+                    "value": "bad you!"
+                  },
+                  "functionReturnParameters": 332,
+                  "id": 334,
+                  "nodeType": "Return",
+                  "src": "251:17:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 336,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bad",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 329,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:2:5"
+            },
+            "returnParameters": {
+              "id": 332,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 331,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 336,
+                  "src": "216:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 330,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "216:6:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "215:15:5"
+            },
+            "scope": 337,
+            "src": "181:95:5",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 338,
+        "src": "34:257:5"
+      }
+    ],
+    "src": "0:291:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x2f41A98b21AC9f2208843EEaC169D617a6827396",
+      "transactionHash": "0x5a1b5b940011da195c1769ad3e15ad72960c34878f4e94a2be42eb9a3d148f06"
+    }
+  },
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-12-15T15:20:12.065Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

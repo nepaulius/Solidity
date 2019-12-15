@@ -1,0 +1,296 @@
+{
+  "contractName": "hi",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nice",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"nice\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/greet.sol\":\"hi\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/greet.sol\":{\"keccak256\":\"0x5dd793a8165fe30ee5e9676f51d5b925de2bb66d5749aa6268e0112a6e16df7d\",\"urls\":[\"bzz-raw://568e6408d1cc8a570ffbdf62911265f2d5410ca4f27dd890ec7f22aa629de6cc\",\"dweb:/ipfs/QmVFFbU5d3LjR5YHHm4ZFuXQyk89aXMc2tsXydAg86VYdo\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061011d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806392cc410a14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601181526020017f4e69636520746f206d65657420796f752100000000000000000000000000000081525090509056fea265627a7a723158204f9e45fe0ca10b6de3a0baf90a2267c91f7f7044372d78252484ce019eb93ab164736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806392cc410a14602d575b600080fd5b603360ab565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101560715780820151818401526020810190506058565b50505050905090810190601f168015609d5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040518060400160405280601181526020017f4e69636520746f206d65657420796f752100000000000000000000000000000081525090509056fea265627a7a723158204f9e45fe0ca10b6de3a0baf90a2267c91f7f7044372d78252484ce019eb93ab164736f6c634300050c0032",
+  "sourceMap": "34:151:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:151:2;;;;;;;",
+  "deployedSourceMap": "34:151:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:151:2;;;;;;;;;;;;;;;;;;;65:105;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;65:105:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;101:13;136:26;;;;;;;;;;;;;;;;;;;65:105;:::o",
+  "source": "pragma solidity >=0.4.0 <=0.6.0;\r\ncontract hi{\r\n    \r\n   \r\n\r\n    function nice() pure public returns(string memory){\r\n        \r\n        return \"Nice to meet you!\";\r\n    }\r\n    \r\n    \r\n}",
+  "sourcePath": "C:/Users/k/desktop/dirbtuves/TRUE-fella/contracts/greet.sol",
+  "ast": {
+    "absolutePath": "/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/greet.sol",
+    "exportedSymbols": {
+      "hi": [
+        183
+      ]
+    },
+    "id": 184,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 174,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0",
+          "<=",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 183,
+        "linearizedBaseContracts": [
+          183
+        ],
+        "name": "hi",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 181,
+              "nodeType": "Block",
+              "src": "115:55:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4e69636520746f206d65657420796f7521",
+                    "id": 179,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "143:19:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7ae0e484cdc1e1687a0d12348c3aba489a02f22f70c368de5133ca29149fa3ac",
+                      "typeString": "literal_string \"Nice to meet you!\""
+                    },
+                    "value": "Nice to meet you!"
+                  },
+                  "functionReturnParameters": 178,
+                  "id": 180,
+                  "nodeType": "Return",
+                  "src": "136:26:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 182,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:2"
+            },
+            "returnParameters": {
+              "id": 178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 177,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 182,
+                  "src": "101:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 176,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:15:2"
+            },
+            "scope": 183,
+            "src": "65:105:2",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 184,
+        "src": "34:151:2"
+      }
+    ],
+    "src": "0:185:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/k/desktop/dirbtuves/TRUE-fella/contracts/greet.sol",
+    "exportedSymbols": {
+      "hi": [
+        183
+      ]
+    },
+    "id": 184,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 174,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".0",
+          "<=",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 183,
+        "linearizedBaseContracts": [
+          183
+        ],
+        "name": "hi",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 181,
+              "nodeType": "Block",
+              "src": "115:55:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "4e69636520746f206d65657420796f7521",
+                    "id": 179,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "143:19:2",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_7ae0e484cdc1e1687a0d12348c3aba489a02f22f70c368de5133ca29149fa3ac",
+                      "typeString": "literal_string \"Nice to meet you!\""
+                    },
+                    "value": "Nice to meet you!"
+                  },
+                  "functionReturnParameters": 178,
+                  "id": 180,
+                  "nodeType": "Return",
+                  "src": "136:26:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 182,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 175,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:2"
+            },
+            "returnParameters": {
+              "id": 178,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 177,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 182,
+                  "src": "101:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 176,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "101:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "100:15:2"
+            },
+            "scope": 183,
+            "src": "65:105:2",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 184,
+        "src": "34:151:2"
+      }
+    ],
+    "src": "0:185:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.19",
+  "updatedAt": "2019-12-15T15:20:12.055Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
