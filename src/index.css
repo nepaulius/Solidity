@@ -47,6 +47,16 @@ input#show4{
 	border-style: solid;
 	border-color: #337ab7;
 }
+input#show6{
+
+	margin-left:20px;
+	border-style: solid;
+	border-color: #337ab7;
+}
+#ref{
+	float: right;
+	margin-right: 200px;
+}
 
 #cl3{
 
@@ -56,6 +66,15 @@ input#show4{
 	margin-bottom: 5px;
 }
 #cl4{
+
+	padding:10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 5px;
+	margin-top:10px;
+	margin-left: 50px;
+}
+#cl5{
 
 	padding:10px;
 	padding-left: 30px;

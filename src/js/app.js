@@ -115,6 +115,24 @@ App = {
     });
 
 
+    var temp_refund;
+    $("#cl5").click(function(){
+
+    var add=$("#show6").val();
+    console.log(add);
+
+    App.contracts.movies.deployed().then(function(instance){
+    var a = instance;
+    console.log(a);
+    return a.refundMovies(add);
+    }).then(function(result){
+       temp_refund = result;
+       $("#show5").text(temp_refund);
+       console.log(temp_refund);
+      });  
+    });
+
+
 
 
   },
