@@ -1,4 +1,6 @@
-
+body{
+	background-image: url("black-background.jpeg");
+}
 .block{
 
 	border-style: solid;
@@ -7,17 +9,45 @@
 	margin-top:30px;
 	margin-left: 10px;
 	border-radius: 5px;
+	background-color: #e7f8ff;
+	text-align: center;
+
+}
+.cur-block{
+
+	border-style: solid;
+	border-color:#337ab7;
+	display: inline-block;
+	margin-left: 10px;
+    margin-top: 50px;
+	border-radius: 5px;
+	background-color: #e7f8ff;
+	text-align: center;
+	float: right;
+	margin-right: 10px;
 
 }
 .block2{
 	border-style: solid;
 	border-color:#337ab7;
-	margin-top:40px;
+	margin-top:20px;
 	margin-left: 10px;
 	margin-right:1000px;
 	border-radius: 5px;
 }
+.block22{
 
+	border-style: solid;
+	border-color:#337ab7;
+	margin-top:30px;
+	margin-left: auto;
+	margin-right: auto;
+	width:500px; 
+	border-radius: 5px;
+	background-color: #f7ff3e;
+	text-align:left;
+
+}
 #show{
 	border-style: solid;
 	border-color: #337ab7;
@@ -34,10 +64,30 @@
 
 	font-weight: bold;
 }
-
-input#show3, input#show2{
+img{
+	width: 70px;
+	margin-top: 2px;
+	margin-left: 10px;
+	background-color: orange;
+	border-radius: 10px;
+}
+#cur{
+	background-color: #5858fd;
+	padding: 5px;
+}
+#user{
+	background-color: #64ec66;
+}
+input#show2{
 
 	margin-left:100px;
+	border-style: solid;
+	border-color: #337ab7;
+
+}
+input#show3{
+
+	margin-left:8px;
 	border-style: solid;
 	border-color: #337ab7;
 }
@@ -49,12 +99,13 @@ input#show4{
 }
 input#show6{
 
-	margin-left:20px;
+	margin-left:8px;
 	border-style: solid;
 	border-color: #337ab7;
+
 }
 #ref{
-	float: right;
+	float: left;
 	margin-right: 200px;
 }
 
@@ -64,6 +115,7 @@ input#show6{
 	padding-left: 30px;
 	padding-right: 30px;
 	margin-bottom: 5px;
+	margin-top:10px;
 }
 #cl4{
 
@@ -81,7 +133,41 @@ input#show6{
 	padding-right: 30px;
 	margin-bottom: 5px;
 	margin-top:10px;
-	margin-left: 50px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

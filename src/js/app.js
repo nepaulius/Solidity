@@ -36,8 +36,7 @@ App = {
       // Set the provider for our contract
       App.contracts.movies.setProvider(App.web3Provider);
     
-      // Use our contract to retrieve and mark the adopted pets
-      // return App.markAdopted();
+      
       return App.init();
 
     });
@@ -98,6 +97,8 @@ App = {
 
 
 
+
+
     $("#cl4").click(function(){
 
       var add=$("#show4").val();
@@ -132,7 +133,33 @@ App = {
       });  
     });
 
+    App.contracts.movies.deployed().then(function(instance){
+      var a = instance;
+      console.log(a);
+      return a.Sellers_balance();
+    }).then(function(result){
 
+      b = result;
+
+      $("#shop_bal").text(b);
+       
+
+    });
+
+      
+
+       App.contracts.movies.deployed().then(function(instance){
+      var a = instance;
+      console.log(a);
+      return a.courier_balance();
+    }).then(function(result){
+
+      b = result;
+
+      $("#courier_bal").text(b);
+       
+
+    });
 
 
   },
