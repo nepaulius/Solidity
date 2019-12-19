@@ -87,7 +87,7 @@ deployer.deploy(news);
 };
 ```
 ___
-3)*Npm run dev* paleidžia sugeneruot json srcipt'ą, Web3j leidžia prisijungti prie lokalaus etherium node'o:\
+3)*Npm run dev* paleidžia sugeneruot json srcipt'ą, Web3j ir Metamask pagalba kontraktą sujungiu su interneto nasršykle:\
 ```js
 App = {
   web3Provider: null,
@@ -264,6 +264,6 @@ $(function() {
 });
 ```
 ___
-3) Html, Css, Javascipt padarytas ```"front-end'as"```:\
+4) Html, Css, Javascipt padarytas ```"front-end'as"```:\
 \
 ![](https://user-images.githubusercontent.com/45967745/71185883-ee769e00-2284-11ea-9ece-31cd0ab2f2de.png)
