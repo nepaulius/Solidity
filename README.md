@@ -16,13 +16,14 @@ pragma solidity >=0.4.0 <=0.6.0;
 contract Movies{
 
     address payable owner;
-    address seller = 0x320002B374F326BF28816facc6Be61531d0ADbEf;
-    address courier =  0xd3BA56E55bb25D76982da869f2c5e9ebB489171B;
-    uint public Sellers_balance;
-    uint public courier_balance;
+    address payable seller = 0x320002B374F326BF28816facc6Be61531d0ADbEf;
+    address payable courier = 0x17b4F479462Bf7D3759D958eb9BdF05f10E43D12;
+    uint public sel_bal;
+    uint public cur_bal;
+
+
     
     uint public movies;
-    uint public balance;
 
     uint constant price = 1 ether;
     
@@ -34,49 +35,46 @@ contract Movies{
     constructor() public {
         owner = msg.sender;
         movies = 20;
-        balance = msg.sender.balance;
-        Sellers_balance=seller.balance;
-        courier_balance = courier.balance;
+
+
     }
-    
-    
     
     // validation pre-buying;
     modifier preBuy() {
         require(movies > 0);
         _;
     }
-    
 
     
-    function buyMovies(uint amount) public preBuy {
-       
-        if (amount > movies || msg.sender.balance<(amount * price)) {
-            revert();
-        }
+    function buyMovies(uint amount) public payable preBuy {
+       	
+       	if (amount > movies) {
+            revert(); 
+         }
+    	cur_bal += 1;
+        sel_bal += (amount * price)/1000000000000000000;
         
-       // owner.transfer(amount * price);
-        
-        courier_balance +=1;
-        
-        balance -= (amount * price);
         consumer[msg.sender] += amount;
         movies -= amount;
-        Sellers_balance  += (amount * price);
-    }
+     }
+
     
-    function refundMovies(uint amount) public {
+    function refundMovies(uint amount) payable public {
         
-        if (consumer[msg.sender] < amount) {
+         if (consumer[msg.sender] < amount) {
             revert();
-        }
+  		  }
+        owner.transfer((amount * price));
         
-        courier_balance += 1;
-        balance += (amount * price);
+        sel_bal -= (amount * price)/1000000000000000000;
+        courier.transfer(1 ether);
+        
+        cur_bal += 1;
         consumer[msg.sender] -= amount;
         movies += amount;
     }
 }
+
 ```
 ___
 2) Komanda *truffle migrate --reset* deploy'ina kontraktą į lokalų tinklą:\
